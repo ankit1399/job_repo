@@ -11,7 +11,7 @@ public class getSetFieldSetMapper implements FieldSetMapper<Employee> {
 		// TODO Auto-generated method stub
 		Employee employee = new Employee();
 		employee.setId(fieldSet.readLong("id"));
-		employee.setDesc(fieldSet.readString("desc"));
+		employee.setDescr(fieldSet.readString("descr"));
 		employee.setName(fieldSet.readString("name"));
 		employee.setId2(fieldSet.readLong("id2"));
 		employee.setId3(fieldSet.readLong("id3"));

@@ -1,16 +1,20 @@
 package com.example.job.demo;
 
+import javax.validation.constraints.Pattern;
+
 public class Employee {
 
 	
 	private Long id;
-	private String desc;
+	private String descr;
 	private String name;
 	private Long id2;
 	private Long id3;
 	private Long id4;
 	private Long id5;
+	
 	private String abc;
+	@Pattern(regexp = "[a-zA-Z@]*")
 	private String company;
 	private Long id7;
 	public Long getId() {
@@ -19,11 +23,11 @@ public class Employee {
 	public void setId(Long id) {
 		this.id = id;
 	}
-	public String getDesc() {
-		return desc;
+	public String getDescr() {
+		return descr;
 	}
-	public void setDesc(String desc) {
-		this.desc = desc;
+	public void setDescr(String descr) {
+		this.descr = descr;
 	}
 	public String getName() {
 		return name;
